@@ -123,7 +123,7 @@ describe("MatrixClient", function () {
                 function (error) {
                     expect(error.httpStatus).toEqual(400);
                     expect(error.errcode).toEqual("M_SNAFU");
-                    expect(error.message).toEqual("MatrixError: [400] broken");
+                    expect(error.message).toEqual("LumeError: [400] broken");
                 },
             );
 

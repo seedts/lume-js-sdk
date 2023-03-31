@@ -180,11 +180,11 @@ describe("parseErrorResponse", () => {
 
     it("should set a sensible default error message on MatrixError", () => {
         let err = new MatrixError();
-        expect(err.message).toEqual("MatrixError: Unknown message");
+        expect(err.message).toEqual("LumeError: Unknown message");
         err = new MatrixError({
             error: "Oh no",
         });
-        expect(err.message).toEqual("MatrixError: Oh no");
+        expect(err.message).toEqual("LumeError: Oh no");
     });
 
     it("should handle no type gracefully", () => {

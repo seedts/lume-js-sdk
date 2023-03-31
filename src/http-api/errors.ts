@@ -60,7 +60,7 @@ export class MatrixError extends HTTPError {
         if (url) {
             message = `${message} (${url})`;
         }
-        super(`MatrixError: ${message}`, httpStatus);
+        super(`LumeError: ${message}`, httpStatus);
         this.errcode = errorJson.errcode;
         this.name = errorJson.errcode || "Unknown error code";
         this.data = errorJson;
